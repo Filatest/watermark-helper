@@ -49,14 +49,15 @@
         水印大小比：
         <input id="size" type="range" min="3" max="10" value="5">
     </label>
-    <label>
-        旋转角度：
-        <input id="angle" type="range" min="-180" max="180" value="45">
-        <span id="anglevalue" ></span>
-    </label>
+   
     <label>
         水印间隔比：
         <input id="gap" type="range" min="20" max="300" value="150">
+    </label>
+    <label>
+        旋转角度：
+        <input id="angle" type="range" min="-180" max="180" value="45" oninput="updateValue()">
+        <span id="anglevalue" >45</span>
     </label>
     <label>
         水印字体：
